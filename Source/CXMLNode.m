@@ -53,7 +53,8 @@ if (_node)
 
 	if (_freeNodeOnRelease)
 		{
-		xmlFreeNode(_node);
+		// error: pointer being freed was not allocated
+		//xmlFreeNode(_node);
 		}
 
 	_node = NULL;
